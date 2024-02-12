@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* ---------Desktop screeen-------------------- */
+.m__s{
+    padding-bottom: 06px;
+}
+.logon{
+    width: 24%;
+    display: flex;
+    align-items: center;
+}
+nav a{
+    font-size: 13px;
+}
+.C__2::-webkit-scrollbar{
+    display: none;
+}
+.C__2{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    cursor: pointer;
+}
+.ca__rd:hover{
+    transform: scale(1.20);
+    transition: 500ms;
+}
+.t_r a,span:hover{
+    transform: scale(1.10);
+    transition: 500ms;
+}
+.card-body{
+    color: white;
+    font-size: 11px;
+}
+.btn_1 .b_1{
+    margin-top: 240px;
+    margin-left: 45px;
+    padding: 5px 15px 5px 15px;
+    border: none;
+    border-radius: 5px;
+
+}
+.btn_1 .b_2{
+    margin-top: 240px;
+    margin-left: 120px;
+    padding: 5px 15px 5px 15px;
+    border: none;
+    border-radius: 5px;
+
+}
+.btn_1{
+    width: 100%;
+}
+.B__R h1{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 55px;
+}
+.B__R .btn_1{
+    justify-content: start;
+}
+.f_n{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 45px;
+}
+.l_i_2{
+    display: none;
+}
+.sm{
+    margin: 25px 10px 16px 10px;
+    position: relative;
+}
+.c__n{
+    margin: 45px 0 0 45px;
+}
+.c_n_p{
+    margin: 110px 0 0 45px;
+}
+.slide-button{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    padding: 0 1px 0 3px;
+    font-size: 1.7rem;
+    background-color: #343a40;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+.slide-button:hover{
+    transform: scale(1.30);
+    transition: 500ms;
+    color: white;
+    background-color: rgb(24, 24, 24);
+}
+.s__style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.slide-button#backBtn, #backBtn1, #backBtn2, #backBtn3, #backBtn4, #backBtn5, #backBtn6, #backBtn7{
+    left: -5px;
+}
+
+.slide-button#nextBtn, #nextBtn1, #nextBtn2, #nextBtn3, #nextBtn4, #nextBtn5, #nextBtn6, #nextBtn7{
+    right: -5px;
+}
+.material-symbols-outlined{
+    font-size: 20px;
+}
+/* ---------mobile screeen--------------------------------- */
+@media  (max-width:990px){
+
+    .m__s{
+        display: none;
+    }
+    .B__R p{
+        display: none;
+    }
+    .btn_1{
+        justify-content: start; 
+        margin-left: 44px;
+    }
+    .btn_1 .c__n{
+        display: block;
+        font-size: 30px;
+        margin-top: 200px;
+    }
+    .l_i{
+        display: none;
+    }
+    .l_i_2{
+        display: block;
+    }
+    .btn_1 a, button{
+        font-size: 08px;
+    }
+    .btn_1 .btn_a{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    .btn_1 .b_1{
+        margin-left: 72px;
+    }
+    .btn_1 .b_2{
+        margin-left: 135px;
+    }
+}

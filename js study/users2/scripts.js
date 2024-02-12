@@ -1,0 +1,13 @@
+fetch("https://jsonplaceholder.typicode.com/users").then((res)=>res.json()).then(res=>{
+    res.forEach(item=>{
+        tb.innerHTML+=`
+        <tr>
+        <td>${item.name}</td>
+        <td>${item.email}</td>
+        <td>${item.phone}</td>
+        <td>${item.website}</td>
+        <td>${item.address.city}</td>
+        </tr>
+        `
+    })
+})

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        #calculator{
+           width: 300px;
+           height: 600px;
+        }
+        table{
+            margin-right: auto;
+            margin-left: auto;
+            background-color: #000;
+            border-radius: 10px;
+        }
+        #result{
+            width: 372px;
+            height: 75px;
+            background-color: #000000;
+            border: none;
+            color: white;
+            font-size: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: end;
+        }
+        .digits{
+            width: 70px;
+            height: 70px;
+            border-radius: 40px;
+            font-size: 30px;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            background-color: rgb(66, 65, 65);
+            color: white;
+            border: 0px;
+        }
+        #digit-0{
+            width: 173px;
+            height: 70px;
+            border-radius: 40px;
+            font-size: 30px;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            background-color: rgb(66, 65, 65);;
+            color: #fff;
+            border: 0px;
+        }
+        .digits-top{
+            width: 70px;
+            height: 70px;
+            border-radius: 40px;
+            font-size: 30px;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            background-color: rgb(169, 161, 161);
+            border: 0px;
+        }
+        .digits-side{
+            width: 70px;
+            height: 70px;
+            border-radius: 40px;
+            font-size: 30px;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            background-color: rgb(235, 153, 52);
+            color: #fff;
+            border: 0px;
+        }
+    </style>
+</head>
+<body>
+        <table id="calculator">
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="result" placeholder="0">
+                </td>
+            </tr>
+            <tr >
+                <td><input type="button" value="AC" class="digits-top" onclick="allClear()"></td>
+                <td><input type="button" value="C"  class="digits-top" onclick="bspace()"></td>
+                <td><input type="button" value="%"  class="digits-top" onclick="display('%')"></td>
+                <td><input type="button" value="/" class="digits-side" onclick="display('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" class="digits" onclick="display('7')"></td>
+                <td><input type="button" value="8" class="digits" onclick="display('8')"></td>
+                <td><input type="button" value="9" class="digits" onclick="display('9')"></td>
+                <td><input type="button" value="*" class="digits-side" onclick="display('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" class="digits" onclick="display('4')"></td>
+                <td><input type="button" value="5" class="digits" onclick="display('5')"></td>
+                <td><input type="button" value="6" class="digits" onclick="display('6')"></td>
+                <td><input type="button" value="-" class="digits-side" onclick="display('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" class="digits" onclick="display('1')"></td>
+                <td><input type="button" value="2" class="digits" onclick="display('2')"></td>
+                <td><input type="button" value="3" class="digits" onclick="display('3')"></td>
+                <td><input type="button" value="+" class="digits-side" onclick="display('+')"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" value="0" id="digit-0" onclick="display('0')"></td>
+                <td><input type="button" value="." class="digits" onclick="display('.')"></td>
+                <td><input type="button" value="=" class="digits-side" onclick="evalExp()"></td>
+            </tr>
+        </table>
+        <script src="./scripts.js"></script>
+</body>
+</html>
